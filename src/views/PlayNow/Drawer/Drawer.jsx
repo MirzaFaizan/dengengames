@@ -157,7 +157,7 @@ class ResponsiveDrawer extends React.Component {
             </Drawer>
           </Hidden>
         </nav>
-        <main className={classes.content} style={{backgroundImage:`url('https://cdn.tronbet.io/images/bg.jpg')`,backgroundRepeat:'no-repeat',backgroundColor:'black'}}>
+        <main className={classes.content} style={{backgroundImage:`url('https://cdn.tronbet.io/images/bg.jpg')`,backgroundRepeat:'no-repeat',backgroundColor:'black',backgroundSize:'fill'}}>
             <Grid container spacing={0} style={{paddingTop:'8%'}}>
               <Grid item xs={6}>
               <Grid container spacing={0}>
@@ -336,7 +336,7 @@ class ResponsiveDrawer extends React.Component {
               </Grid>
               <Hidden smDown>
               <Grid item xs={12} sm={6} md={4}>
-                <Grid container spacing={8} direction="row" style={{backgroundColor:'#181818',width:'400px',overflow:'auto',border:'solid black 3px' }}>
+                <Grid container spacing={8} direction="row" style={{backgroundColor:'#181818',width:'400px',height:'500px',overflow:'auto',border:'solid black 3px' }}>
 
                     <Grid item xs={12}>
                         <Typography variant="title" align='center' color="inherit">Wagerz Warz</Typography>

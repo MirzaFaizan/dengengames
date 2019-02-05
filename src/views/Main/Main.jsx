@@ -2,29 +2,29 @@ import React, { Component } from "react";
 
 import {
     Route,
-    // NavLink,
+    NavLink,
     HashRouter
   } from "react-router-dom";
-  // import {
-  //   Collapse,
-  //   Navbar,
-  //   NavbarToggler,
-  //   NavbarBrand,
-  //   Nav,
-  //   NavItem,
-  //   UncontrolledDropdown,
-  //   DropdownToggle,
-  //   DropdownMenu,
-  //   DropdownItem 
-  //         } 
-  // from 'reactstrap';
+  import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    // UncontrolledDropdown,
+    // DropdownToggle,
+    // DropdownMenu,
+    // DropdownItem 
+          } 
+  from 'reactstrap';
   import Home from '../Home/Home.jsx';
-  // import DegenPlatform from '../Section1/Section1.jsx';
-  // import Ante from "../Section2/Section2.jsx";
-  // import SuperRepresentative from "../Section3/Section3.jsx";
-  // import RoadMap from '../Section4/Section4.jsx';
-  // import Partners from '../Section5/Section5.jsx';
-  // import Footer from '../Footer/Footer.jsx';
+  import DegenPlatform from '../Section1/Section1.jsx';
+  import Ante from "../Section2/Section2.jsx";
+  import SuperRepresentative from "../Section3/Section3.jsx";
+  import RoadMap from '../Section4/Section4.jsx';
+  import Partners from '../Section5/Section5.jsx';
+  import Footer from '../Footer/Footer.jsx';
   import PlayNow from '../PlayNow/Drawer/Drawer.jsx'
 
 
@@ -49,8 +49,8 @@ import {
       return (
         <HashRouter>
           <div>
-                {/* <Navbar color="dark" dark expand="md">
-                <NavbarBrand href="/">DEGENGAMES</NavbarBrand>
+                <Navbar dark expand="md" style={{backgroundColor:'black'}}>
+                <NavbarBrand href="/"><h5>DEGENGAMES</h5></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="container" navbar >
@@ -72,37 +72,21 @@ import {
                     <NavItem style={{marginRight:'2%',paddingTop:'2%'}}>
                     <NavLink to="/playnow" style={{color:'white'}}><h5>Play Now</h5></NavLink>
                     </NavItem>
-                    <UncontrolledDropdown nav inNavbar style={{marginLeft:'15%'}}>
-                        <DropdownToggle nav caret>
-                        Options
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                        <DropdownItem>
-                            Option 1
-                        </DropdownItem>
-                        <DropdownItem>
-                            Option 2
-                        </DropdownItem>
-                        <DropdownItem divider />
-                        <DropdownItem>
-                            Option 3
-                        </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
+                   
 
                     </Nav>
                 </Collapse>
-                </Navbar> */}
+                </Navbar>
             <div>
             <Route exact path="/" component={Home}/>
-            {/* <Route path="/degenplatform" component={DegenPlatform}/>
+            <Route path="/degenplatform" component={DegenPlatform}/>
             <Route path="/ante" component={Ante}/>
             <Route path="/superrepresentative" component={SuperRepresentative}/>
             <Route path="/roadmap" component={RoadMap}/>
-            <Route path="/partners" component={Partners}/> */}
+            <Route path="/partners" component={Partners}/>
             <Route path="/playnow" component={PlayNow}/>
             </div>
-            {/* <Footer/> */}
+            <Footer/>
           </div>
         </HashRouter>
       );
