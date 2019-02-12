@@ -2,11 +2,14 @@ import React, { Component } from "react";
 
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Main from "../Main/Main";
 
 class Degen extends Component {
   render() {
     return (
-      <div style={{padding:16,paddingTop:'10%'}} className="container">
+        <div>
+          <Main/>
+          <div style={{padding:16,paddingTop:'10%'}} className="container">
       <Grid container spacing={8} justify="flex-start" alignContent="flex-start" alignItems="flex-start">
         <Grid item xs={12}>
           <Typography variant="display1" color="inherit" align="center">What is TRONbet platform all about?</Typography>
@@ -102,6 +105,7 @@ class Degen extends Component {
         </Grid>
       </Grid>
       </div>
+        </div>
     );
   }
 }

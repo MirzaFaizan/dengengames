@@ -29,6 +29,7 @@ TabContainer.propTypes = {
 const styles = theme => ({
   root: {
     backgroundColor: '#181818',
+      // marginTop:'18.25%'
    
   },
   appbarRoot: {
@@ -58,7 +59,6 @@ class FullWidthTabs extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" color="default" className={classes.appbarRoot}>
           <Tabs
             value={this.state.value}
             onChange={this.handleChange}
@@ -70,7 +70,6 @@ class FullWidthTabs extends React.Component {
             <Tab label="Rankings" icon={<Sort/>}/>
 
           </Tabs>
-        </AppBar>
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={this.state.value}

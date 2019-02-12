@@ -3,12 +3,41 @@ import React, { Component } from 'react';
 import './App.css';
 import Main from './views/Main/Main.jsx';
 
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from "react-router-dom";
+
+//components
+import Home from './views/Home/Home';
+import DegenPlatform from './views/Section1/Section1';
+import Ante from './views/Section2/Section2';
+import SuperRepresentative from './views/Section3/Section3';
+import RoadMap from './views/Section4/Section4';
+
+import Partners from './views/Section5/Section5';
+// import Footer from '../Footer/Footer.jsx';
+import PlayNow from './views/PlayNow/Drawer/Drawer';
+import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
+import TestDrawer from "./views/PlayNow/Drawer/TestDrawer";
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Main/>
-      </div>
+
+        <HashRouter className="App">
+                <div className="App">
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/degenplatform" component={DegenPlatform}/>
+                    <Route path="/ante" component={Ante}/>
+                    <Route path="/superrepresentative" component={SuperRepresentative}/>
+                    <Route path="/roadmap" component={RoadMap}/>
+                    <Route path="/partners" component={Partners}/>
+                    <Route path="/playnow" component={PlayNow}/>
+                  <Route path="test-playnow" component={TestDrawer}/>
+                </div>
+        </HashRouter>
     );
   }
 }

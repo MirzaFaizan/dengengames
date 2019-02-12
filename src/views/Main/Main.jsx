@@ -18,19 +18,8 @@ import {
     // DropdownItem 
           } 
   from 'reactstrap';
-  import Home from '../Home/Home.jsx';
-  import DegenPlatform from '../Section1/Section1.jsx';
-  import Ante from "../Section2/Section2.jsx";
-  import SuperRepresentative from "../Section3/Section3.jsx";
-  import RoadMap from '../Section4/Section4.jsx';
-  import Partners from '../Section5/Section5.jsx';
-  import Footer from '../Footer/Footer.jsx';
-  import PlayNow from '../PlayNow/Drawer/Drawer.jsx'
-
-
 //   import Grid from '@material-ui/core/Grid';
 
- 
   class Main extends Component {
     constructor(props) {
         super(props);
@@ -47,7 +36,6 @@ import {
       }
     render() {
       return (
-        <HashRouter>
           <div>
                 <Navbar dark expand="md" style={{backgroundColor:'black'}}>
                 <NavbarBrand href="/"><h5>DEGENGAMES</h5></NavbarBrand>
@@ -72,23 +60,10 @@ import {
                     <NavItem style={{marginRight:'2%',paddingTop:'2%'}}>
                     <NavLink to="/playnow" style={{color:'white'}}><h5>Play Now</h5></NavLink>
                     </NavItem>
-                   
-
                     </Nav>
                 </Collapse>
                 </Navbar>
-            <div>
-            <Route exact path="/" component={Home}/>
-            <Route path="/degenplatform" component={DegenPlatform}/>
-            <Route path="/ante" component={Ante}/>
-            <Route path="/superrepresentative" component={SuperRepresentative}/>
-            <Route path="/roadmap" component={RoadMap}/>
-            <Route path="/partners" component={Partners}/>
-            <Route path="/playnow" component={PlayNow}/>
-            </div>
-            <Footer/>
           </div>
-        </HashRouter>
       );
     }
   }

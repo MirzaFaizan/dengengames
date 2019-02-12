@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Typography } from "@material-ui/core";
 import Hidden from '@material-ui/core/Hidden';
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
 
 const divImage = {
   backgroundImage: `url("https://www.tronbet.com/images/xianlutu.png")`,/* The image used */ /* Used if the image is unavailable */
@@ -13,7 +15,9 @@ const divImage = {
 class RoadMap extends Component {
   render() {
     return (
-      <div style={{padding:8,paddingTop:'5%'}} className="container">
+        <div>
+            <Main/>
+            <div style={{padding:8,paddingTop:'5%'}} className="container">
        <Typography variant="display1" color="inherit" align="center">Roadmap</Typography>
        
         <div style={divImage}>
@@ -69,6 +73,8 @@ class RoadMap extends Component {
         </div>
         
       </div>
+            <Footer/>
+        </div>
     );
   }
 }

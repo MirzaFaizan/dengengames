@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import { Typography } from "@material-ui/core";
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button';
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
  
 class Super extends Component {
   render() {
     return (
-      <div style={{padding:8,textAlign:'center',paddingTop:'10%'}} className="container">
+        <div>
+          <Main/>
+          <div style={{padding:8,textAlign:'center',paddingTop:'10%'}} className="container">
       <Grid container spacing={8} justify="flex-start" alignContent="flex-start" alignItems="flex-start">
         <Grid item xs={12}>
           <Typography variant="display2" color="inherit" align="center">Super Representative</Typography>
@@ -19,6 +23,8 @@ class Super extends Component {
         </Grid>
       </Grid>
       </div>
+          <Footer/>
+        </div>
     );
   }
 }

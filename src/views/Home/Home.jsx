@@ -3,11 +3,15 @@ import React, { Component } from "react";
 import Grid from '@material-ui/core/Grid';
 
 import Button from  '@material-ui/core/Button'
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
 
 class Degen extends Component {
   render() {
     return (
-      <div style={{padding:12,textAlign:'center',paddingTop:'5%'}} className="container">
+        <div>
+          <Main/>
+          <div style={{padding:12,textAlign:'center',paddingTop:'5%'}} className="container">
       <Grid container spacing={24} justify="center" alignContent="center" alignItems="center">
         <Grid item xs={12}>
         <img src="https://www.tronbet.com/images/banner.png" alt="source" style={{width:'75%', height:'auto'}}/>
@@ -24,6 +28,8 @@ class Degen extends Component {
         </Grid>
       </Grid>
       </div>
+          <Footer/>
+        </div>
     );
   }
 }
