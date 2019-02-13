@@ -20,8 +20,6 @@ import Grid from '@material-ui/core/Grid';
 
 import { Slider } from 'material-ui-slider';
 import Table from './Table/Table.jsx';
-
-import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab'
 import LOGO from'../../../images/logo.png';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -29,8 +27,6 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 import HelpIcon from '@material-ui/icons/Help';
 import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
 
 
 const drawerWidth = 350;

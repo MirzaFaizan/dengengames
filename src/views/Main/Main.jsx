@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
 import {
-    Route,
-    NavLink,
-    HashRouter
+    NavLink
   } from "react-router-dom";
   import {
     Collapse,

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Main from './views/Main/Main.jsx';
 
 import {
     Route,
-    NavLink,
     HashRouter
 } from "react-router-dom";
 
@@ -19,7 +17,6 @@ import RoadMap from './views/Section4/Section4';
 import Partners from './views/Section5/Section5';
 // import Footer from '../Footer/Footer.jsx';
 import PlayNow from './views/PlayNow/Drawer/Drawer';
-import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
 import TestDrawer from "./views/PlayNow/Drawer/TestDrawer";
 
 class App extends Component {

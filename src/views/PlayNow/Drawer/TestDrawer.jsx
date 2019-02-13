@@ -1,28 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
 // import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-
-import DrawerTabs from './DrawerTabs/DrawerTabs.jsx';
-import Button from '@material-ui/core/Button';
-
-import Grid from '@material-ui/core/Grid';
-
-
-import { Slider } from 'material-ui-slider';
-import Table from './Table/Table.jsx';
-
-import HeaderTest from './Header/header';
-
 
 const drawerWidth = 350;
 
@@ -88,7 +72,7 @@ const styles = theme => ({
 
 class TestDrawer extends React.Component {
     render() {
-        const { classes, theme } = this.props;
+        const { classes } = this.props;
 
         return (
             <div>
