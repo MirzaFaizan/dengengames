@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b817346-e1ef-4f3b-80c3-a08abd74fad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="8b817346-e1ef-4f3b-80c3-a08abd74fad8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -313,16 +305,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549877957319</updated>
-      <workItem from="1549877963553" duration="29208000" />
+      <workItem from="1549877963553" duration="29602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29208000" />
+    <option name="totallyTimeSpent" value="29602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
