@@ -176,21 +176,7 @@ function AlignItemsList(props) {
           }
         />
       </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
+
         <ListItem alignItems="flex-start">
         <ListItemText
         className={classes.textcolor}
