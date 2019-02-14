@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b817346-e1ef-4f3b-80c3-a08abd74fad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,14 +46,14 @@
           <entry key="css" value="36" />
           <entry key="html" value="7" />
           <entry key="js" value="329" />
-          <entry key="jsx" value="2912" />
+          <entry key="jsx" value="3071" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="36" />
           <entry key="HTML" value="7" />
-          <entry key="JSX Harmony" value="2912" />
+          <entry key="JSX Harmony" value="3071" />
           <entry key="JavaScript" value="329" />
         </counts>
       </usages-collector>
@@ -73,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="167">
+              <caret line="314" column="106" selection-start-line="314" selection-start-column="106" selection-end-line="314" selection-end-column="106" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#411#458#0" expanded="true" />
@@ -88,7 +84,6 @@
                 <element signature="e#9667#13273#0" />
                 <element signature="e#13318#14086#0" />
                 <element signature="e#14131#14896#0" />
-                <element signature="e#15168#21568#0" />
                 <element signature="e#22012#22215#0" />
                 <element signature="e#22260#22473#0" />
                 <element signature="e#22519#23798#0" />
@@ -348,12 +343,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549877957319</updated>
       <workItem from="1549877963553" duration="39417000" />
-      <workItem from="1550132591974" duration="11529000" />
+      <workItem from="1550132591974" duration="12710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50946000" />
+    <option name="totallyTimeSpent" value="52127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -361,7 +356,7 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.25" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.25204584" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -382,9 +377,9 @@
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.25204584" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.25204584" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -566,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="167">
+          <caret line="314" column="106" selection-start-line="314" selection-start-column="106" selection-end-line="314" selection-end-column="106" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#411#458#0" expanded="true" />
@@ -581,7 +576,6 @@
             <element signature="e#9667#13273#0" />
             <element signature="e#13318#14086#0" />
             <element signature="e#14131#14896#0" />
-            <element signature="e#15168#21568#0" />
             <element signature="e#22012#22215#0" />
             <element signature="e#22260#22473#0" />
             <element signature="e#22519#23798#0" />

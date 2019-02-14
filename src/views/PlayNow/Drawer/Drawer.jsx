@@ -59,7 +59,7 @@ const styles = theme => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor:'#2f3e45',
+    backgroundColor:'#282c34',
       position:'fixed',
       marginTop:'65px',
       overflow:'hidden'
@@ -120,7 +120,7 @@ class ResponsiveDrawer extends React.Component {
           {/*<div className={classes.toolbar}><img src={LOGO} alt="logo" style={{height:'66px'}}/> </div>*/}
         <Divider />
         <DrawerTabs/>
-          <div className={classes.toolbar}><img src={LOGO} alt="logo" style={{height:'66px'}}/> </div>
+          <div className={classes.toolbar} style={{padding:'10px'}}><input type="text" placeholder="Type your message..." style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}} /> </div>
 
       </div>
     );
@@ -310,9 +310,9 @@ class ResponsiveDrawer extends React.Component {
                                                 />
                                             </Grid>
                                             <Hidden mdDown implementation="css">
-                                                <Grid item xs={12} style={{width:'100%',backgroundColor:'#2f3e45',padding:'20px',marginLeft:'-28%',marginTop:'-1%',marginRight:'-50%'}}>
+                                                <Grid item xs={12} style={{width:'100%',backgroundColor:'#282c34',padding:'20px',marginLeft:'-28%',marginTop:'-1%',marginRight:'-50%'}}>
                                                     {/*start bet ammount*/}
-                                                    <Grid container spacing={8}>
+                                                    <Grid container spacing={8} style={{paddingBottom:'5px'}}>
                                                         <Grid item xs={8}>
                                                             <Grid container spacing={0} justify="center">
                                                                 <Grid item xs={12}>
@@ -629,7 +629,7 @@ class ResponsiveDrawer extends React.Component {
 
                     </Grid>
                     <Hidden lgUp implementation="css">
-                        <Grid container item xs={12} style={{width:'100%',backgroundColor:'#2f3e45',padding:'20px'}}>
+                        <Grid container item xs={12} style={{width:'100%',backgroundColor:'#282c34',padding:'20px'}}>
                             {/*start lgUp bet ammount*/}
                             <Grid container spacing={12}>
                                 <Grid item xs={8}>
