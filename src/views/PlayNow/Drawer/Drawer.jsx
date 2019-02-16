@@ -236,6 +236,11 @@ class ResponsiveDrawer extends React.Component {
                                         </Grid>
                                     </Grid>
                                 </Grid>
+                                
+                                
+                                
+                                
+                                
                                 <Grid container item xs={12} sm={12} md={8} style={{width:'100%'}}>
                                     <div className="container">
                                         <Grid container spacing={0} style={{paddingTop:'2.5%'}}>
@@ -310,7 +315,8 @@ class ResponsiveDrawer extends React.Component {
                                                 />
                                             </Grid>
                                             <Hidden mdDown implementation="css">
-                                                <Grid item xs={12} style={{width:'100%',backgroundColor:'#282c34',padding:'20px',marginLeft:'-28%',marginTop:'-1%',marginRight:'-50%'}}>
+                                                <Grid item xs={12} style={{width:'100%',backgroundColor:'#282c34'
+                                                }}>
                                                     {/*start bet ammount*/}
                                                     <Grid container spacing={8} style={{paddingBottom:'5px'}}>
                                                         <Grid item xs={8}>
@@ -387,8 +393,9 @@ class ResponsiveDrawer extends React.Component {
                                 </Grid>
                                 <Hidden mdDown>
                                     <Grid item xs={12} sm={6} md={4} style={{paddingBotton:'20px'}}>
-                                        <Grid container spacing={8} direction="row" style={{backgroundColor:'#181818',width:'100%',
-                                            height:'560px',overflow:'auto',borderLeft:'solid black 5px',borderBottom:'solid black 5px',borderTop:'solid black 5px' }}>
+                                        <Grid container spacing={8} direction="row" style={{backgroundColor:'#181818',
+                                        width:'100%',
+                                            height:'560px',overflow:'auto',borderLeft:'solid black 10px',borderRight:'solid black 10px',borderTop:'solid black 10px' }}>
 
                                             <Grid item xs={12}>
                                                 <Typography variant="title" align='center' color="inherit">Wagerz Warz</Typography>
@@ -401,6 +408,13 @@ class ResponsiveDrawer extends React.Component {
                                                 <Grid container spacing={8}>
                                                     <Grid item xs={3}>
                                                         <Typography variant="caption" align='center' color="inherit">Rank</Typography>
+
+
+
+
+
+
+                                                        
                                                     </Grid>
                                                     <Grid item xs={3}>
                                                         <Typography variant="caption" align='center' color="inherit">Player</Typography>

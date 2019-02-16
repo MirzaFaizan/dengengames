@@ -9,11 +9,13 @@ import Typography from '@material-ui/core/Typography';
 const styles = theme => ({
   root: {
     width: '100%',
-    maxWidth: 360,
+    // maxWidth: 360,
+    // height:'40%',
+
     backgroundColor: '#181818',
     color:'white',
     // overflow:'auto',
-      maxHeight: 450,
+      maxHeight: '400px',
   },
   inline: {
     display: 'inline',

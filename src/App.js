@@ -32,7 +32,7 @@ class App extends Component {
                     <Route path="/roadmap" component={RoadMap}/>
                     <Route path="/partners" component={Partners}/>
                     <Route path="/playnow" component={PlayNow}/>
-                  <Route path="test-playnow" component={TestDrawer}/>
+                  <Route path="/test-playnow" component={TestDrawer}/>
                 </div>
         </HashRouter>
     );
