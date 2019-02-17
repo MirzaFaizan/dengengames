@@ -31,8 +31,10 @@ class App extends Component {
                     <Route path="/superrepresentative" component={SuperRepresentative}/>
                     <Route path="/roadmap" component={RoadMap}/>
                     <Route path="/partners" component={Partners}/>
-                    <Route path="/playnow" component={PlayNow}/>
+                    {/*<Route path="/playnow" component={PlayNow}/>*/}
                   <Route path="/test-playnow" component={TestDrawer}/>
+                    <Route path="/playnow" component={TestDrawer}/>
+
                 </div>
         </HashRouter>
     );
