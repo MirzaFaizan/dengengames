@@ -6,6 +6,10 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
+import Utils from '../../../utils/index';
+import TronWeb from 'tronweb';
+
+
 // import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -32,6 +36,9 @@ import TRONLINK from "../../../images/tronLink.png";
 import Background from "../../../images/bg.jpg"
 
 import './drawer.css';
+
+
+const FOUNDATION_ADDRESS = 'TWiWt5SEDzaEqS6kE5gandWMNfxR2B5xzg';
 const drawerWidth = 350;
 const style = {
     margin: 0,
@@ -114,16 +121,140 @@ const styles = theme => ({
   }
 });
 class ResponsiveDrawer extends React.Component {
-  state = {
+
+
+    state = {
     mobileOpen: false,
     value:50,
     betAmount:10,
     winChance:1,
     payoutonWin:985,
-    multiplier:1.97
+    multiplier:1.97,
+        tronAdress:'',
+        tronAdressBool: false,
+        LOGIN: true,
+        tronWeb: {
+            installed: false,
+            loggedIn: false
+        },
+        currentMessage: {
+            message: '',
+            loading: false
+        },
+        messages: {
+            recent: {},
+            featured: []
+        }
   };
+    // constructor(props) {
+    //     super(props);
+    //
+    //     this.onMessageEdit = this.onMessageEdit.bind(this);
+    //     this.onMessageSend = this.onMessageSend.bind(this);
+    //     this.onMessageTip = this.onMessageTip.bind(this);
+    // }
 
-  handleChange = (event) => {
+    async componentDidMount() {
+        await new Promise(resolve => {
+            const tronWebState = {
+                installed: !!window.tronWeb,
+                loggedIn: window.tronWeb && window.tronWeb.ready
+            };
+
+            if(tronWebState.installed) {
+                console.log("tron installed" );
+                this.setState({
+                    tronWeb:
+                    tronWebState
+                });
+
+                return resolve();
+            }
+
+            let tries = 0;
+
+            const timer = setInterval(() => {
+                if(tries >= 10) {
+                    const TRONGRID_API = 'https://api.trongrid.io';
+
+                    window.tronWeb = new TronWeb(
+                        TRONGRID_API,
+                        TRONGRID_API,
+                        TRONGRID_API
+                    );
+
+                    this.setState({
+                        tronWeb: {
+                            installed: false,
+                            loggedIn: false
+                        }
+                    });
+
+                    clearInterval(timer);
+                    return resolve();
+                }
+
+                tronWebState.installed = !!window.tronWeb;
+                tronWebState.loggedIn = window.tronWeb && window.tronWeb.ready;
+
+                if(!tronWebState.installed)
+                {
+                    console.log("tron not installed")
+                    return tries++;
+                }
+                this.setState({
+                    tronWeb: tronWebState
+                });
+
+
+                resolve();
+            }, 100);
+        });
+
+        if(!this.state.tronWeb.loggedIn) {
+            // Set default address (foundation address) used for contract calls
+            // Directly overwrites the address object as TronLink disabled the
+            // function call
+            console.log("not login")
+            window.tronWeb.defaultAddress = {
+                hex: window.tronWeb.address.toHex(FOUNDATION_ADDRESS),
+                base58: FOUNDATION_ADDRESS
+            };
+            window.tronWeb.on('addressChanged', () => {
+                if(this.state.tronWeb.loggedIn)
+                    return;
+
+                this.setState({
+                    tronWeb: {
+                        installed: true,
+                        loggedIn: true
+                    }
+                });
+                console.log("login");
+                this.setState({
+                    LOGIN: false,
+                    tronAdressBool:true
+                });
+
+
+            });
+        }
+        console.log("name" );
+        window.tronWeb.trx.getAccount("TWiWt5SEDzaEqS6kE5gandWMNfxR2B5xzg").then(res=>{
+            console.log(res.address)
+            this.setState({
+                tronAdress:res.address
+            })
+
+        });
+        await Utils.setTronWeb(window.tronWeb);
+
+        this.startEventListener();
+        this.fetchMessages();
+    }
+
+
+    handleChange = (event) => {
     this.setState({ value:event });
   }
   handleDrawerToggle = () => {
@@ -138,7 +269,10 @@ class ResponsiveDrawer extends React.Component {
           {/*<div className={classes.toolbar}><img src={LOGO} alt="logo" style={{height:'66px'}}/> </div>*/}
         <Divider />
         <DrawerTabs/>
-          <div className={classes.toolbar} style={{padding:'10px'}}><input type="text" placeholder="Type your message..." style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}} /> </div>
+          <div className={classes.toolbar} style={{padding:'10px'}}>
+              <input type="text" placeholder="Type your message..."
+                     style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}} />
+          </div>
 
       </div>
     );
@@ -158,7 +292,8 @@ class ResponsiveDrawer extends React.Component {
                     </IconButton>
                     <Typography variant="h6" color="inherit" noWrap>
                     <Hidden xsDown implementation="css"> 
-                      <img src={LOGO} alt="logo" style={{height:'64px'}}/>
+                      {/*<img src={LOGO} alt="logo" style={{height:'64px'}}/>*/}
+                        <span style={{color:'#1dc914',fontSize:'25px'}}>D</span>en<span style={{color:'#1dc914'}}>g</span>en Games
                       </Hidden>
                     </Typography>
                          <div style={style}>
@@ -166,11 +301,17 @@ class ResponsiveDrawer extends React.Component {
                                <img src={IMG1} alt="img1"/>
                             </span>
                              <span className="spann" style={{paddingRight:'15px',fontSize:'16px',color:'#bbb'}}>
-                                Login
+                                { this.state.LOGIN && (
+                                 <span>Login</span>
+                                )}
+                                 { this.state.tronAdressBool && (
+                                     <span><span>{this.state.tronAdress}</span></span>
+                                 )}
                             </span>
                             <span className="spann" style={{paddingRight:'10px'}}>
                                 <img src={TRONLINK} style={{height:'40px'}} alt="tron"/>
-                                   <select style={{fontSize:'20px',color:'#bbb',backgroundColor:'#2f3e45',border:'none'}}>                                                <option>tronLink</option>
+                                   <select style={{fontSize:'20px',color:'#bbb',backgroundColor:'#2f3e45',border:'none'}}>
+                                       <option>tronLink</option>
                                      <option>hel</option>
                                 </select>
                             </span>
