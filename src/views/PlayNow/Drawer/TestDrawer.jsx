@@ -9,6 +9,13 @@ import IconButton from '@material-ui/core/IconButton';
 import Utils from '../../../utils/index';
 import TronWeb from 'tronweb';
 
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Slide from '@material-ui/core/Slide';
+
 
 // import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -37,6 +44,9 @@ import Background from "../../../images/bg.jpg"
 
 import './drawer.css';
 
+function Transition(props) {
+    return <Slide direction="up" {...props} />;
+}
 
 const FOUNDATION_ADDRESS = 'TWiWt5SEDzaEqS6kE5gandWMNfxR2B5xzg';
 const drawerWidth = 350;
@@ -90,7 +100,6 @@ const styles = theme => ({
       overflow:'hidden'
 
   },
-
   content: {
     flexGrow: 1,
       padding: theme.spacing.unit * 3,
@@ -104,7 +113,7 @@ const styles = theme => ({
     position: 'absolute',
     top: '0',
     left: '175px',
-},
+  },
   container:{
     position: 'relative',
     textAlign: 'center',
@@ -122,7 +131,6 @@ const styles = theme => ({
 });
 class ResponsiveDrawer extends React.Component {
 
-
     state = {
     mobileOpen: false,
     value:50,
@@ -133,6 +141,7 @@ class ResponsiveDrawer extends React.Component {
         tronAdress:'',
         tronAdressBool: false,
         LOGIN: true,
+        open: false,
         tronWeb: {
             installed: false,
             loggedIn: false
@@ -146,6 +155,14 @@ class ResponsiveDrawer extends React.Component {
             featured: []
         }
   };
+    handleClickOpen = () => {
+        this.setState({ open: true });
+    };
+
+    handleClose = () => {
+        this.setState({ open: false });
+    };
+
     // constructor(props) {
     //     super(props);
     //
@@ -293,7 +310,8 @@ class ResponsiveDrawer extends React.Component {
                     <Typography variant="h6" color="inherit" noWrap>
                     <Hidden xsDown implementation="css"> 
                       {/*<img src={LOGO} alt="logo" style={{height:'64px'}}/>*/}
-                        <span style={{color:'#1dc914',fontSize:'25px'}}>D</span>en<span style={{color:'#1dc914'}}>g</span>en Games
+                        <span style={{fontSize:'24px'}}>
+                            <span style={{color:'#1dc914',fontSize:'30px'}}>D</span>en<span style={{color:'#1dc914',fontSize:'24px'}}>g</span>en Games</span>
                       </Hidden>
                     </Typography>
                          <div style={style}>
@@ -302,11 +320,12 @@ class ResponsiveDrawer extends React.Component {
                             </span>
                              <span className="spann" style={{paddingRight:'15px',fontSize:'16px',color:'#bbb'}}>
                                 { this.state.LOGIN && (
-                                 <span>Login</span>
+                                 <span onClick={this.handleClickOpen}>Login</span>
                                 )}
-                                 { this.state.tronAdressBool && (
+
+                                { this.state.tronAdressBool && (
                                      <span><span>{this.state.tronAdress}</span></span>
-                                 )}
+                                )}
                             </span>
                             <span className="spann" style={{paddingRight:'10px'}}>
                                 <img src={TRONLINK} style={{height:'40px'}} alt="tron"/>
@@ -322,11 +341,36 @@ class ResponsiveDrawer extends React.Component {
                                 </select>
                              </span>
                           </div>
-                            
-
                   </Toolbar>
                 </AppBar>
-                
+                {/*alert*/}
+                <Dialog
+                    open={this.state.open}
+                    TransitionComponent={Transition}
+                    keepMounted
+                    onClose={this.handleClose}
+                    aria-labelledby="alert-dialog-slide-title"
+                    aria-describedby="alert-dialog-slide-description"
+                >
+                    {/*<DialogTitle id="alert-dialog-slide-title">*/}
+                        {/*{"Use Google's location service?"}*/}
+                    {/*</DialogTitle>*/}
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-slide-description">
+                            Please login to your TRONLink wallet. If you do not have TRONLink wallet <br/> installed please visit http://u6.gg/gmc5D and download the chrome extension.
+                            <br/>(TRONbet is only availble using Chrome browser for the time being)
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={this.handleClose} color="primary">
+                            Disagree
+                        </Button>
+                        <Button onClick={this.handleClose} color="primary">
+                            Agree
+                        </Button>
+                    </DialogActions>
+                </Dialog>
+                {/*end alert*/}
                 <div style={backgroundImgGreen}>
                     <Grid container spacing={0}>
                         <Grid item={4}>
@@ -359,10 +403,7 @@ class ResponsiveDrawer extends React.Component {
                                 </Hidden>
                             </nav>
                         </Grid>
-
-
-{/* right coloumn */}
-
+  {/* right coloumn */}
                         <Grid item xs={8}>
                                 {/* first row */}
                                 <Grid container spacing={0} style={{padding:'8%'}}>
@@ -433,7 +474,7 @@ class ResponsiveDrawer extends React.Component {
                                                                     <span title="">
                                                                     <span  style={{
                                                                         fontSize: '100px',
-                                                                        color: 'rgb(236, 236, 236)',
+                                                                        color: '#1dc914',
                                                                         display: 'inline-block',
                                                                         width: '170px',
                                                                         fontWeight: 800,
@@ -446,7 +487,6 @@ class ResponsiveDrawer extends React.Component {
                                                                 Prediction
                                                                     </span> */}
                                                                     </span>
-
                                                                 </div>
                                                             </div>
                                                         </Grid>

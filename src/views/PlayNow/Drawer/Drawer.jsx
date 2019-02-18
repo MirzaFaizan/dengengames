@@ -63,7 +63,6 @@ const styles = theme => ({
       position:'fixed',
       marginTop:'65px',
       overflow:'hidden'
-
   },
 
   content: {
@@ -95,6 +94,7 @@ const styles = theme => ({
     color:'white'
   }
 });
+
 class ResponsiveDrawer extends React.Component {
   state = {
     mobileOpen: false,
@@ -104,7 +104,6 @@ class ResponsiveDrawer extends React.Component {
     payoutonWin:985,
     multiplier:1.97
   };
-
 
   handleChange = (event) => {
     this.setState({ value: event });

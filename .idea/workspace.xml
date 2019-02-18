@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b817346-e1ef-4f3b-80c3-a08abd74fad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" afterDir="false" />
     </list>
@@ -49,14 +46,14 @@
           <entry key="css" value="36" />
           <entry key="html" value="7" />
           <entry key="js" value="338" />
-          <entry key="jsx" value="4273" />
+          <entry key="jsx" value="4382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="36" />
           <entry key="HTML" value="7" />
-          <entry key="JSX Harmony" value="4273" />
+          <entry key="JSX Harmony" value="4382" />
           <entry key="JavaScript" value="338" />
         </counts>
       </usages-collector>
@@ -72,12 +69,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="17">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#411#458#0" expanded="true" />
-                <element signature="e#1382#2505#0" />
                 <element signature="e#3241#5819#0" />
                 <element signature="e#3894#3946#0" />
                 <element signature="e#3973#4405#0" />
@@ -106,13 +102,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="295" column="110" selection-start-line="295" selection-start-column="110" selection-end-line="295" selection-end-column="110" />
+            <state relative-caret-position="181">
+              <caret line="354" column="19" lean-forward="true" selection-start-line="354" selection-start-column="19" selection-end-line="356" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#411#458#0" expanded="true" />
                 <element signature="e#1419#1529#0" />
                 <element signature="e#1556#1740#0" />
-                <element signature="e#1767#2890#0" />
               </folding>
             </state>
           </provider>
@@ -169,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/drawer.css" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" />
         <option value="$PROJECT_DIR$/src/tronbox.js" />
         <option value="$PROJECT_DIR$/tronbox.js" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
+        <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" />
       </list>
     </option>
@@ -267,12 +263,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549877957319</updated>
       <workItem from="1549877963553" duration="39417000" />
-      <workItem from="1550132591974" duration="37439000" />
+      <workItem from="1550132591974" duration="42053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76856000" />
+    <option name="totallyTimeSpent" value="81470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -475,14 +471,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tronbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        <state relative-caret-position="17">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#411#458#0" expanded="true" />
-            <element signature="e#1382#2505#0" />
             <element signature="e#3241#5819#0" />
             <element signature="e#3894#3946#0" />
             <element signature="e#3973#4405#0" />
@@ -507,29 +516,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tronbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="295" column="110" selection-start-line="295" selection-start-column="110" selection-end-line="295" selection-end-column="110" />
+        <state relative-caret-position="181">
+          <caret line="354" column="19" lean-forward="true" selection-start-line="354" selection-start-column="19" selection-end-line="356" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#411#458#0" expanded="true" />
             <element signature="e#1419#1529#0" />
             <element signature="e#1556#1740#0" />
-            <element signature="e#1767#2890#0" />
           </folding>
         </state>
       </provider>
