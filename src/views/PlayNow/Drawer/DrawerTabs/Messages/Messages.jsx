@@ -27,173 +27,20 @@ function AlignItemsList(props) {
   const { classes } = props;
   return (
       <div>
-    <List className={classes.root}>
+    <List style={{width:'100%',backgroundColor: '#181818',color:'white',maxHeight: '400px'}}>
     <ListItem alignItems="flex-start">
         <ListItemText
-        className={classes.textcolor}
           primary={
-            <Typography component="span" className={classes.inline} color="inherit">
+            <Typography component="span" style={{display: 'inline',color:'white'}} color="inherit">
               Level Here:
             </Typography>
         }
           secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
+              <Typography component="span" style={{display: 'inline',color:'white'}} color="inherit">
                 Message Here
               </Typography>
           }
         />
-      </ListItem>
-      <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-      </ListItem>
-
-        <ListItem alignItems="flex-start">
-        <ListItemText
-        className={classes.textcolor}
-          primary={
-            <Typography component="span" className={classes.inline} color="inherit">
-              Level Here:
-            </Typography>
-        }
-          secondary={
-              <Typography component="span" className={classes.inline} color="inherit">
-                Message Here
-              </Typography>
-          }
-        />
-
       </ListItem>
     </List>
       </div>

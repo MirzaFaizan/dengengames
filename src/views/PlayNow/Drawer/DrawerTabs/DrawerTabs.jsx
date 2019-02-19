@@ -11,6 +11,10 @@ import Rankings from './Rankings/Rankings.jsx';
 
 import MailIcon from '@material-ui/icons/Mail';
 import Sort from '@material-ui/icons/Sort';
+import List from "@material-ui/core/List/List";
+import ListItem from "@material-ui/core/ListItem/ListItem";
+import ListItemText from "@material-ui/core/ListItemText/ListItemText";
+import firebase from 'firebase';
 
 function TabContainer({ children, dir }) {
   return (
@@ -37,15 +41,80 @@ const styles = theme => ({
   },
   tabsRoot:{
       color:'white',
-  }
+  },
+    textColor:{
+      color:'white'
+    }
 });
 
 class FullWidthTabs extends React.Component {
   state = {
     value: 0,
   };
+    constructor(props) {
+        super(props)
+        this.state = { text: "", messages: [] }
+    }
+    componentDidMount() {
+        var config = {
+            apiKey: "AIzaSyCQYIfV90PdMdLD8cagUzXBs0vjNckb0hE",
+            authDomain: "dengen-games-chat.firebaseapp.com",
+            databaseURL: "https://dengen-games-chat.firebaseio.com",
+            projectId: "dengen-games-chat",
+            storageBucket: "dengen-games-chat.appspot.com",
+            messagingSenderId: "144346267436"
+        };
+        firebase.initializeApp(config);
+        this.getMessages()
+    }
 
-  handleChange = (event, value) => {
+    onSubmit = event => {
+        if (event.charCode === 13 && this.state.text.trim() !== "") {
+            this.writeMessageToDB(this.state.text)
+            this.setState({ text: "" })
+        }
+    }
+
+    writeMessageToDB = message => {
+        firebase
+            .database()
+            .ref("messages/")
+            .push({
+                text: message
+            })
+    }
+
+    getMessages = () => {
+        var messagesDB = firebase
+            .database()
+            .ref("messages/")
+            .limitToLast(500)
+        messagesDB.on("value", snapshot => {
+            let newMessages = []
+            snapshot.forEach(child => {
+                var message = child.val()
+                newMessages.push({ id: child.key, text: message.text })
+            })
+            this.setState({ messages: newMessages })
+            this.bottomSpan.scrollIntoView({ behavior: "smooth" })
+        })
+    }
+
+    renderMessages = () => {
+        const { classes, theme } = this.props;
+        return this.state.messages.map(message => (
+            <ListItem>
+                <ListItemText
+                    classes={{
+                        primary:classes.textColor
+                }}
+                    primary={message.text}
+                />
+            </ListItem>
+        ))
+    }
+
+    handleChange = (event, value) => {
     this.setState({ value });
   };
 
@@ -57,6 +126,7 @@ class FullWidthTabs extends React.Component {
     const { classes, theme } = this.props;
 
     return (
+        <div>
       <div className={classes.root}>
           <Tabs
             value={this.state.value}
@@ -75,13 +145,43 @@ class FullWidthTabs extends React.Component {
           onChangeIndex={this.handleChangeIndex}
         >
           <TabContainer dir={theme.direction}>
-            <Messages/>
+            {/*<Messages/>*/}
+
+
+
+
+
+
+              <div>
+                  <List style={{width:'100%',backgroundColor: '#181818',color:'white',maxHeight: '400px'}}>
+                      {this.renderMessages()}
+                  </List>
+              </div>
+
+
+
+
+
+
+
+
+
           </TabContainer>
           <TabContainer dir={theme.direction}>
           <Rankings/>
           </TabContainer>
         </SwipeableViews>
       </div>
+            <div className={classes.toolbar} style={{padding:'10px'}}>
+                <input type="text" placeholder="Type your message..."
+                       style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}}
+                       onChange={event => this.setState({ text: event.target.value })}
+                       value={this.state.text}
+                       onKeyPress={this.onSubmit}/>
+            </div>
+            <span ref={el => (this.bottomSpan = el)} />
+
+        </div>
     );
   }
 }

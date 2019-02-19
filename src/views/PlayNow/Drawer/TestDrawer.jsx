@@ -286,10 +286,6 @@ class ResponsiveDrawer extends React.Component {
           {/*<div className={classes.toolbar}><img src={LOGO} alt="logo" style={{height:'66px'}}/> </div>*/}
         <Divider />
         <DrawerTabs/>
-          <div className={classes.toolbar} style={{padding:'10px'}}>
-              <input type="text" placeholder="Type your message..."
-                     style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}} />
-          </div>
 
       </div>
     );
