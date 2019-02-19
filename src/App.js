@@ -18,6 +18,7 @@ import Partners from './views/Section5/Section5';
 // import Footer from '../Footer/Footer.jsx';
 import PlayNow from './views/PlayNow/Drawer/Drawer';
 import TestDrawer from "./views/PlayNow/Drawer/TestDrawer";
+import whitePaper from "./views/StaticViews/whitePaper";
 
 class App extends Component {
   render() {
@@ -34,6 +35,9 @@ class App extends Component {
                     {/*<Route path="/playnow" component={PlayNow}/>*/}
                   <Route path="/test-playnow" component={TestDrawer}/>
                     <Route path="/playnow" component={TestDrawer}/>
+
+                    {/*static pages*/}
+                    <Route path="/white_paper" component={whitePaper} />
 
                 </div>
         </HashRouter>

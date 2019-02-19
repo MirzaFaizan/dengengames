@@ -66,6 +66,7 @@ class FullWidthTabs extends React.Component {
         };
         firebase.initializeApp(config);
         this.getMessages()
+        console.log("BOOOOOOOL"+this.props.LOGIN)
     }
 
     onSubmit = event => {

@@ -32,7 +32,7 @@ import Grid from '@material-ui/core/Grid';
 import { Slider } from 'material-ui-slider';
 import Table from './Table/Table.jsx';
 import Tab from '@material-ui/core/Tab'
-import LOGO from'../../../images/logo.png';
+import LOGO from'../../../images/logoo.png';
 import PhoneIcon from '@material-ui/icons/Phone';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
@@ -305,9 +305,9 @@ class ResponsiveDrawer extends React.Component {
                     </IconButton>
                     <Typography variant="h6" color="inherit" noWrap>
                     <Hidden xsDown implementation="css"> 
-                      {/*<img src={LOGO} alt="logo" style={{height:'64px'}}/>*/}
-                        <span style={{fontSize:'24px'}}>
-                            <span style={{color:'#1dc914',fontSize:'30px'}}>D</span>en<span style={{color:'#1dc914',fontSize:'24px'}}>g</span>en Games</span>
+                      <img src={LOGO} alt="logo" style={{height:'64px'}}/>
+                        {/*<span style={{fontSize:'24px'}}>*/}
+                            {/*<span style={{color:'#1dc914',fontSize:'30px'}}>D</span>en<span style={{color:'#1dc914',fontSize:'24px'}}>g</span>en Games</span>*/}
                       </Hidden>
                     </Typography>
                          <div style={style}>

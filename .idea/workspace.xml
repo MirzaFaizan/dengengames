@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b817346-e1ef-4f3b-80c3-a08abd74fad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main/Main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,36 +27,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
+          <entry key="css" value="4" />
           <entry key="html" value="1" />
-          <entry key="js" value="3" />
-          <entry key="jsx" value="22" />
+          <entry key="js" value="4" />
+          <entry key="jsx" value="29" />
+          <entry key="png" value="1" />
           <entry key="ts" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
+          <entry key="CSS" value="4" />
           <entry key="HTML" value="1" />
-          <entry key="JSX Harmony" value="22" />
-          <entry key="JavaScript" value="3" />
+          <entry key="Image" value="1" />
+          <entry key="JSX Harmony" value="29" />
+          <entry key="JavaScript" value="4" />
           <entry key="TypeScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="36" />
+          <entry key="css" value="46" />
           <entry key="html" value="7" />
-          <entry key="js" value="338" />
-          <entry key="jsx" value="4658" />
+          <entry key="js" value="403" />
+          <entry key="jsx" value="6146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="36" />
+          <entry key="CSS" value="46" />
           <entry key="HTML" value="7" />
-          <entry key="JSX Harmony" value="4658" />
-          <entry key="JavaScript" value="338" />
+          <entry key="JSX Harmony" value="6146" />
+          <entry key="JavaScript" value="403" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -70,34 +70,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/StaticViews/whitePaper.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="419" column="134" selection-start-line="419" selection-start-column="134" selection-end-line="419" selection-end-column="134" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#246#487#0" />
+                <element signature="e#746#974#0" />
+                <element signature="e#995#1223#0" />
+                <element signature="e#3119#3299#0" />
+                <element signature="e#4032#7080#0" />
+                <element signature="e#4287#5088#0" />
+                <element signature="e#7124#7174#0" />
+                <element signature="e#7418#13883#0" />
+                <element signature="e#14466#17541#0" />
+                <element signature="e#14748#15549#0" />
+                <element signature="e#15571#16117#0" />
+                <element signature="e#16162#16556#0" />
+                <element signature="e#17502#20293#0" />
+                <element signature="e#17550#20267#0" />
+                <element signature="e#20392#23467#0" />
+                <element signature="e#21610#21788#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx">
+        <entry file="file://$PROJECT_DIR$/src/views/StaticViews/whitepaper.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/Main/Main.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#411#458#0" expanded="true" />
-                <element signature="e#3241#5819#0" />
-                <element signature="e#3894#3946#0" />
-                <element signature="e#3973#4405#0" />
-                <element signature="e#4432#5732#0" />
-                <element signature="e#7896#8503#0" />
-                <element signature="e#8536#9140#0" />
-                <element signature="e#9173#9780#0" />
-                <element signature="e#23744#25086#0" />
-                <element signature="e#23844#25145#0" />
-                <element signature="e#25193#26494#0" />
-                <element signature="e#26540#27841#0" />
-                <element signature="e#27887#29188#0" />
-                <element signature="e#29234#30535#0" />
-                <element signature="e#30581#31882#0" />
-                <element signature="e#31928#33229#0" />
-                <element signature="e#33275#34576#0" />
-                <element signature="e#34622#35923#0" />
-                <element signature="e#35969#37270#0" />
-                <element signature="e#37316#38617#0" />
-                <element signature="e#38663#39964#0" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,59 +122,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="288" selection-start-line="288" selection-end-line="288" />
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#411#458#0" expanded="true" />
-                <element signature="e#1419#1529#0" />
-                <element signature="e#1556#1740#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="46" selection-start-line="28" selection-end-line="46" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#779#1224#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="103" column="46" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#!!block;n#TabContainer#0" />
-                <element signature="e#692#770#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tronbox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -190,17 +158,20 @@
         <option value="$PROJECT_DIR$/src/views/Section4/Section4.jsx" />
         <option value="$PROJECT_DIR$/src/views/Section5/Section5.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/views/Main/Main.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/Header/header.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/drawer.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/tronbox.js" />
         <option value="$PROJECT_DIR$/tronbox.js" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx" />
-        <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx" />
+        <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/views/StaticViews/header/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/views/Main/Main.jsx" />
+        <option value="$PROJECT_DIR$/src/views/StaticViews/whitepaper.css" />
+        <option value="$PROJECT_DIR$/src/views/StaticViews/whitePaper.jsx" />
       </list>
     </option>
   </component>
@@ -256,6 +227,13 @@
               <item name="dengengames" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dengengames" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dengengames" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="PlayNow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,19 +249,7 @@
               <item name="dengengames" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="PlayNow" type="462c0819:PsiDirectoryNode" />
-              <item name="Drawer" type="462c0819:PsiDirectoryNode" />
-              <item name="DrawerTabs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dengengames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dengengames" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="PlayNow" type="462c0819:PsiDirectoryNode" />
-              <item name="Drawer" type="462c0819:PsiDirectoryNode" />
-              <item name="DrawerTabs" type="462c0819:PsiDirectoryNode" />
-              <item name="Messages" type="462c0819:PsiDirectoryNode" />
+              <item name="StaticViews" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -333,16 +299,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83647000" />
+    <option name="totallyTimeSpent" value="93595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17336309" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.19148937" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2569558" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -361,9 +328,9 @@
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.19148937" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2569558" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -481,13 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Main/Main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/drawer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -501,16 +461,6 @@
           <caret line="182" column="9" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <element signature="e#76#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,13 +479,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="46" selection-start-line="28" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#779#1224#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/Drawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <caret line="104" column="19" lean-forward="true" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#411#458#0" expanded="true" />
+            <element signature="e#1382#2505#0" />
             <element signature="e#3241#5819#0" />
             <element signature="e#3894#3946#0" />
             <element signature="e#3973#4405#0" />
@@ -560,38 +522,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="288" selection-start-line="288" selection-end-line="288" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#411#458#0" expanded="true" />
-            <element signature="e#1419#1529#0" />
-            <element signature="e#1556#1740#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/Messages/Messages.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="46" selection-start-line="28" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#779#1224#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="103" column="46" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
+        <state relative-caret-position="254">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#TabContainer#0" />
-            <element signature="e#692#770#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="e#76#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/logoo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/StaticViews/header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="110" selection-start-line="36" selection-start-column="110" selection-end-line="36" selection-end-column="110" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Main/Main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/StaticViews/whitepaper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/StaticViews/whitePaper.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="419" column="134" selection-start-line="419" selection-start-column="134" selection-end-line="419" selection-end-column="134" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#246#487#0" />
+            <element signature="e#746#974#0" />
+            <element signature="e#995#1223#0" />
+            <element signature="e#3119#3299#0" />
+            <element signature="e#4032#7080#0" />
+            <element signature="e#4287#5088#0" />
+            <element signature="e#7124#7174#0" />
+            <element signature="e#7418#13883#0" />
+            <element signature="e#14466#17541#0" />
+            <element signature="e#14748#15549#0" />
+            <element signature="e#15571#16117#0" />
+            <element signature="e#16162#16556#0" />
+            <element signature="e#17502#20293#0" />
+            <element signature="e#17550#20267#0" />
+            <element signature="e#20392#23467#0" />
+            <element signature="e#21610#21788#0" />
           </folding>
         </state>
       </provider>
