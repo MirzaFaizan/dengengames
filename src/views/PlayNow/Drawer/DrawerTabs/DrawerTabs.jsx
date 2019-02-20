@@ -70,7 +70,8 @@ class FullWidthTabs extends React.Component {
     }
 
     onSubmit = event => {
-        if (event.charCode === 13 && this.state.text.trim() !== "") {
+        if (event.charCode === 13 && this.state.text.trim() !== "")
+        {
             this.writeMessageToDB(this.state.text)
             this.setState({ text: "" })
         }

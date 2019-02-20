@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import {
-    NavLink
+    NavLink, Link
   } from "react-router-dom";
   import {
     Collapse,
@@ -16,6 +16,10 @@ import {
     // DropdownItem 
           } 
   from 'reactstrap';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Fade from '@material-ui/core/Fade';
 import LOGO from "../../images/logoo.png";
 import Hidden from "@material-ui/core/Hidden/Hidden";
 //   import Grid from '@material-ui/core/Grid';
@@ -26,7 +30,10 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
     
         this.toggle = this.toggle.bind(this);
         this.state = {
-          isOpen: false
+          isOpen: false,
+            anchorEl: null,
+            anchorEll: null
+
         };
       }
       toggle() {
@@ -34,7 +41,35 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
           isOpen: !this.state.isOpen
         });
       }
-    render() {
+
+      handleClick = event => {
+          this.setState({ anchorEl: event.currentTarget });
+      };
+
+      handleClose = () => {
+          this.setState({ anchorEl: null });
+      };
+
+
+      handleClickk = event => {
+          this.setState({ anchorEll: event.currentTarget });
+      };
+
+      handleClosee = () => {
+          this.setState({ anchorEll: null });
+      };
+
+
+
+      render() {
+
+          const { anchorEl } = this.state;
+          const open = Boolean(anchorEl);
+
+
+          const { anchorEll } = this.state;
+          const openn = Boolean(anchorEll);
+
       return (
           <div>
                 <Navbar dark expand="md" style={{backgroundColor:'black'}}>
@@ -70,29 +105,63 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
                             <NavLink to="/community_first" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Community First</h5></NavLink>
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
-                            <NavLink to="/roadmap" style={{color:'white'}}>
-                                <select style={{fontSize:'14px',color:'white',backgroundColor:'black',border:'none'}}>
-                                    <option>EDGE Token</option>
-                                    <option>Dividends</option>
-                                </select>
 
-                            </NavLink>
+
+
+
+                            <Button
+                                aria-owns={open ? 'fade-menu' : undefined}
+                                aria-haspopup="true"
+                                onClick={this.handleClickk}
+                                style={{color:'white'}}
+                            >
+                                EDGE Token
+                            </Button>
+                            <Menu
+                                id="fade-menu"
+                                anchorEl={anchorEll}
+                                open={openn}
+                                onClose={this.handleClosee}
+                                TransitionComponent={Fade}
+                            >
+                                <Link to="/edge"> <MenuItem onClick={this.handleClose}>EDGE Token</MenuItem></Link>
+                                <Link to="/dividends"><MenuItem onClick={this.handleClose}>Dividends</MenuItem></Link>
+                            </Menu>
+
+
+
+
+
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
-                            <NavLink to="/hash_ruffle" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Hash Ruffle</h5></NavLink>
+                            <NavLink to="/hash" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Hash Ruffle</h5></NavLink>
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
-                            <NavLink to="/playnow" style={{color:'white'}}>
-                                <select style={{fontSize:'14px',fontWeight:'bold',color:'white',backgroundColor:'black',border:'none'}}>
-                                    <option>More Games OTW</option>
-                                    <option>Fluddit</option>
-                                    <option>Maverick</option>
-                                    <option>Pitch Black</option>
-                                    <option>Roshambo</option>
-                                    <option>NFT</option>
-                                </select>
 
-                            </NavLink>
+
+                            <Button
+                                aria-owns={open ? 'fade-menu' : undefined}
+                                aria-haspopup="true"
+                                onClick={this.handleClick}
+                                style={{color:'white'}}
+                            >
+                                MOre Games OTW
+                            </Button>
+                            <Menu
+                                id="fade-menu"
+                                anchorEl={anchorEl}
+                                open={open}
+                                onClose={this.handleClose}
+                                TransitionComponent={Fade}
+                            >
+                                <Link to="/edge"> <MenuItem onClick={this.handleClose}>More Games OTW</MenuItem></Link>
+                                <Link to="/fluddit"><MenuItem onClick={this.handleClose}>Fluddit</MenuItem></Link>
+                                <Link to="/maverick"><MenuItem onClick={this.handleClose}>Maverick</MenuItem></Link>
+                                <Link to="/pitch"><MenuItem onClick={this.handleClose}>Pitch Black</MenuItem></Link>
+                                <Link to="/roshambo"><MenuItem onClick={this.handleClose}>Roshambo</MenuItem></Link>
+                                <Link to="/nft"><MenuItem onClick={this.handleClose}>NFT</MenuItem></Link>
+                            </Menu>
+
                         </NavItem>
 
 
