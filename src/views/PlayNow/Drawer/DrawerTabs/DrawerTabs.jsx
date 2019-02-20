@@ -16,6 +16,18 @@ import ListItem from "@material-ui/core/ListItem/ListItem";
 import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 import firebase from 'firebase';
 
+
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Paper from '@material-ui/core/Paper';
+
+
+
+
 function TabContainer({ children, dir }) {
   return (
     <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
@@ -46,6 +58,7 @@ const styles = theme => ({
       color:'white'
     }
 });
+var check = localStorage.getItem('check_function');
 
 class FullWidthTabs extends React.Component {
   state = {
@@ -53,8 +66,21 @@ class FullWidthTabs extends React.Component {
   };
     constructor(props) {
         super(props)
-        this.state = { text: "", messages: [] }
+        this.state = { text: "",
+            messages: [],
+            open: false,
+            static: true,
+            dynamic:false
+
+        }
     }
+    // componentWillMount()
+    // {
+    //     // localStorage.removeItem('check_function')
+    //     this.setState({
+    //         dynamic:localStorage.getItem('check_function')
+    //     })
+    // }
     componentDidMount() {
         var config = {
             apiKey: "AIzaSyCQYIfV90PdMdLD8cagUzXBs0vjNckb0hE",
@@ -66,7 +92,11 @@ class FullWidthTabs extends React.Component {
         };
         firebase.initializeApp(config);
         this.getMessages()
-        console.log("BOOOOOOOL"+this.props.LOGIN)
+        console.log("BOOOOOOOL"+this.props.LOGIN);
+        this.setState({
+                    dynamic:localStorage.getItem('check_function')
+                })
+        console.log(this.state.dynamic)
     }
 
     onSubmit = event => {
@@ -175,11 +205,25 @@ class FullWidthTabs extends React.Component {
         </SwipeableViews>
       </div>
             <div className={classes.toolbar} style={{padding:'10px'}}>
+
+
+
+                { !this.state.dynamic && (
+                    <span onClick={this.handleClickOpen}>message here</span>
+                )}
+
+                { this.state.dynamic && (
+                    <span><span>
                 <input type="text" placeholder="Type your message..."
                        style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}}
                        onChange={event => this.setState({ text: event.target.value })}
                        value={this.state.text}
                        onKeyPress={this.onSubmit}/>
+                    </span></span>
+                )}
+
+
+
             </div>
             <span ref={el => (this.bottomSpan = el)} />
 

@@ -726,7 +726,6 @@ class ResponsiveDrawer extends React.Component {
                  </main>
                 </Grid>
 
-
             </div>
     );
   }

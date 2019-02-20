@@ -126,164 +126,164 @@ class whitePaper extends Component {
                         <h1 style={{fontWeight:'bold'}}>Edge Token</h1>
                     </Grid>
                     <Grid container spacing={0} item xs={12} >
-                        <table style={{fontSize:'16px'}}>
+                        <table style={{fontSize:'16px'}} className="table">
                             <tbody>
-                            <tr>
-                                <td><strong>EDGE Distribution</strong></td>
+                            <tr className="tr">
+                                <td className="td"><strong>EDGE Distribution</strong></td>
                             </tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr>
-                                <td>
+                            <tr className="tr"> </tr>
+                            <tr className="tr"></tr>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>Round</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     <strong>Wins/EDGE</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     <strong>Rate</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     <strong>Max Issuance</strong>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>1</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     0.5
                                 </td>
-                                <td>
+                                <td className="td">
                                     200.00%
                                 </td>
-                                <td>
+                                <td className="td">
                                     100,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>2</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     1
                                 </td>
-                                <td>
+                                <td className="td">
                                     100.00%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>3</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     2
                                 </td>
-                                <td>
+                                <td className="td">
                                     50.00%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>4</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     3
                                 </td>
-                                <td>
+                                <td className="td">
                                     33.33%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>5</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     5
                                 </td>
-                                <td>
+                                <td className="td">
                                     20.00%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>6</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     8
                                 </td>
-                                <td>
+                                <td className="td">
                                     12.50%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>7</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     13
                                 </td>
-                                <td>
+                                <td className="td">
                                     7.69%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>8</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     21
                                 </td>
-                                <td>
+                                <td className="td">
                                     4.76%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>9</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     34
                                 </td>
-                                <td>
+                                <td className="td">
                                     2.94%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr className="tr">
+                                <td className="td">
                                     <strong>10</strong>
                                 </td>
-                                <td>
+                                <td className="td">
                                     55
                                 </td>
-                                <td>
+                                <td className="td">
                                     1.82%
                                 </td>
-                                <td>
+                                <td className="td">
                                     1,000,000
                                 </td>
                             </tr>
@@ -418,260 +418,260 @@ class whitePaper extends Component {
                     </p>
                 </Grid>
                 <Grid container spacing={0} item xs={12} style={{paddingLeft:'10%',paddingRight:'10%',paddingTop:'2%',paddingBottom:'2%', fontSize:'16px'}}>
-                    <table className="wp-block-table" style={{paddingTop:'10px'}}>
+                    <table className="table" style={{paddingTop:'10px'}}>
                         <tbody>
-                        <tr>
+                        <tr className="tr">
                             <td>
                                 10TRX
                                 Raffle
                             </td>
                         </tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr>
-                            <td>
+                        <tr className="tr"></tr>
+                        <tr className="tr"></tr>
+                        <tr className="tr">
+                            <td className="td">
                                 <strong>Round</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>Cost</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>#</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>Total</strong>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 1
                             </td>
-                            <td>
+                            <td className="td">
                                 10
                             </td>
-                            <td>
+                            <td className="td">
                                 100
                             </td>
-                            <td>
+                            <td className="td">
                                 1000
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 <strong>Total</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>100</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>1000</strong>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Payout
                             </td>
-                            <td>
+                            <td className="td">
                                 80%
                             </td>
-                            <td>
+                            <td className="td">
                                 800
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Bankroll
                             </td>
-                            <td>
+                            <td className="td">
                                 15%
                             </td>
-                            <td>
+                            <td className="td">
                                 150
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Revenue
                             </td>
-                            <td>
+                            <td className="td">
                                 5%
                             </td>
-                            <td>
+                            <td className="td">
                                 50
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 &nbsp;
                             </td>
-                            <td>
+                            <td className="td">
                                 &nbsp;
                             </td>
-                            <td>
+                            <td className="td">
                                 &nbsp;
                             </td>
-                            <td>
+                            <td className="td">
                                 &nbsp;
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 100TRX
                                 Raffle
                             </td>
                         </tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr>
-                            <td>
+                        <tr className="tr"></tr>
+                        <tr className="tr"></tr>
+                        <tr className="tr">
+                            <td className="td">
                                 <strong>Round</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>Cost</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>#</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>Total</strong>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 1
                             </td>
-                            <td>
+                            <td className="td">
                                 100
                             </td>
-                            <td>
+                            <td className="td">
                                 100
                             </td>
-                            <td>
+                            <td className="td">
                                 10000
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 <strong>Total</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>100</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>10000</strong>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Payout
                             </td>
-                            <td>
+                            <td className="td">
                                 80%
                             </td>
-                            <td>
+                            <td className="td">
                                 8000
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Bankroll
                             </td>
-                            <td>
+                            <td className="td">
                                 15%
                             </td>
-                            <td>
+                            <td className="td">
                                 1500
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Revenue
                             </td>
-                            <td>
+                            <td className="td">
                                 5%
                             </td>
-                            <td>
+                            <td className="td">
                                 500
                             </td>
-                        </tr>
-                        <tr></tr>
-                        <tr>
-                            <td>
+                        </tr >
+                        <tr className="tr"></tr>
+                        <tr className="tr">
+                            <td className="td">
                                 1K
                                 TRX Raffle
                             </td>
                         </tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr>
-                            <td>
+                        <tr className="tr"></tr>
+                        <tr className="tr"></tr>
+                        <tr className="tr">
+                            <td className="td">
                                 <strong>Round</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>Cost</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>#</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>Total</strong>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 1
                             </td>
-                            <td>
+                            <td className="td">
                                 1000
                             </td>
-                            <td>
+                            <td className="td">
                                 100
                             </td>
-                            <td>
+                            <td className="td">
                                 100000
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 <strong>Total</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>1000</strong>
                             </td>
-                            <td>
+                            <td className="td">
                                 <strong>100000</strong>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Payout
                             </td>
-                            <td>
+                            <td className="td">
                                 80%
                             </td>
-                            <td>
+                            <td className="td">
                                 80000
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Bankroll
                             </td>
-                            <td>
+                            <td className="td">
                                 15%
                             </td>
-                            <td>
+                            <td className="td">
                                 15000
                             </td>
                         </tr>
-                        <tr>
-                            <td>
+                        <tr className="tr">
+                            <td className="td">
                                 Revenue
                             </td>
-                            <td>
+                            <td className="td">
                                 5%
                             </td>
-                            <td>
+                            <td className="td">
                                 5000
                             </td>
                         </tr>

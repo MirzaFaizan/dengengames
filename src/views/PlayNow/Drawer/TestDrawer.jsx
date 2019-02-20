@@ -22,7 +22,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-
+import './drawer.css';
 import DrawerTabs from './DrawerTabs/DrawerTabs.jsx';
 import Button from '@material-ui/core/Button';
 
@@ -97,7 +97,8 @@ const styles = theme => ({
     backgroundColor:'#282c34',
       position:'fixed',
       marginTop:'65px',
-      overflow:'hidden'
+      overflow:'hidden',
+      height:'100%'
 
   },
   content: {
@@ -228,16 +229,22 @@ class ResponsiveDrawer extends React.Component {
             }, 100);
         });
 
-        if(!this.state.tronWeb.loggedIn) {
+        if(!this.state.tronWeb.loggedIn)
+        {
             // Set default address (foundation address) used for contract calls
             // Directly overwrites the address object as TronLink disabled the
             // function call
+            localStorage.setItem('check_function', this.state.tronAdressBool);
+            localStorage.removeItem('check_function');
             console.log("not login")
             window.tronWeb.defaultAddress = {
                 hex: window.tronWeb.address.toHex(FOUNDATION_ADDRESS),
                 base58: FOUNDATION_ADDRESS
             };
             window.tronWeb.on('addressChanged', () => {
+
+
+
                 if(this.state.tronWeb.loggedIn)
                     return;
 
@@ -247,11 +254,14 @@ class ResponsiveDrawer extends React.Component {
                         loggedIn: true
                     }
                 });
+
                 console.log("login");
                 this.setState({
                     LOGIN: false,
                     tronAdressBool:true
                 });
+                localStorage.setItem('check_function', this.state.tronAdressBool);
+                localStorage.removeItem('check_function');
 
 
             });
@@ -315,6 +325,9 @@ class ResponsiveDrawer extends React.Component {
                                <img src={IMG1} alt="img1"/>
                             </span>
                              <span className="spann" style={{paddingRight:'15px',fontSize:'16px',color:'#bbb'}}>
+
+
+
                                 { this.state.LOGIN && (
                                  <span onClick={this.handleClickOpen}>Login</span>
                                 )}
@@ -322,6 +335,10 @@ class ResponsiveDrawer extends React.Component {
                                 { this.state.tronAdressBool && (
                                      <span><span>{this.state.tronAdress}</span></span>
                                 )}
+
+
+
+
                             </span>
                             <span className="spann" style={{paddingRight:'10px'}}>
                                 <img src={TRONLINK} style={{height:'40px'}} alt="tron"/>
@@ -359,10 +376,7 @@ class ResponsiveDrawer extends React.Component {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClose} color="primary">
-                            Disagree
-                        </Button>
-                        <Button onClick={this.handleClose} color="primary">
-                            Agree
+                            ok
                         </Button>
                     </DialogActions>
                 </Dialog>
@@ -498,7 +512,7 @@ class ResponsiveDrawer extends React.Component {
                                                         </Grid>
                                                     </Grid>
                                                 </Grid>
-                                                <Grid item xs={12}>
+                                                <Grid item xs={12} >
 
                                                     <Slider
                                                         // classes={{ container: classes.slider }}
@@ -857,21 +871,82 @@ class ResponsiveDrawer extends React.Component {
                                     </Grid>
                                 </Grid>
                                 {/* end second row */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                <div style={{paddingLeft:'10px', fontSize:'16px'}}>
+                                    <Grid container spacing={0} >
+                                        <Grid item xs={3} justify="center" style={{fontSize:'22px'}}>
+                                        </Grid>
+                                        <Grid item xs={6} justify="center" style={{fontSize:'22px'}}>
+                                            <span style={{paddingRight:'15px'}}>My Bets</span>
+                                            <span style={{paddingRight:'15px'}}>All Bets</span>
+                                            <span style={{paddingRight:'15px'}}>High Rollers</span>
+                                            <span style={{paddingRight:'15px'}}>Rare Wins</span>
+                                        </Grid>
+                                        <Grid item xs={3} justify="center" style={{fontSize:'22px'}}>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={12}>
+                                            <table className="tablee">
+                                    <tr className="trr" style={{color:'#4f71a8'}}>
+                                        <th className="thh">Player</th>
+                                        <th className="thh">Prediction</th>
+                                        <th className="thh">Lucky Number</th>
+                                        <th className="thh">Bets</th>
+                                        <th className="thh">Payout</th>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                    <tr className="trr">
+                                        <td className="thh">jghfdxfbcvdks</td>
+                                        <td className="thh">Over 4</td>
+                                        <td className="thh">44</td>
+                                        <td className="thh">10 TRX</td>
+                                        <td className="thh">124.68 TRX</td>
+                                    </tr>
+                                </table>
+                                        </Grid>
+                                    </Grid>
+                                </div>
                         </Grid>
                   
                   
