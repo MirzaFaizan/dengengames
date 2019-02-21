@@ -178,26 +178,11 @@ class FullWidthTabs extends React.Component {
         >
           <TabContainer dir={theme.direction}>
             {/*<Messages/>*/}
-
-
-
-
-
-
               <div>
                   <List style={{width:'100%',backgroundColor: '#181818',color:'white',maxHeight: '400px'}}>
                       {this.renderMessages()}
                   </List>
               </div>
-
-
-
-
-
-
-
-
-
           </TabContainer>
           <TabContainer dir={theme.direction}>
           <Rankings/>
@@ -205,14 +190,11 @@ class FullWidthTabs extends React.Component {
         </SwipeableViews>
       </div>
             <div className={classes.toolbar} style={{padding:'10px'}}>
-
-
-
-                { !this.state.dynamic && (
+                { !localStorage.getItem('check_function') &&
                     <span onClick={this.handleClickOpen}>message here</span>
-                )}
+                }
 
-                { this.state.dynamic && (
+                { localStorage.getItem('check_function') &&
                     <span><span>
                 <input type="text" placeholder="Type your message..."
                        style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}}
@@ -220,10 +202,7 @@ class FullWidthTabs extends React.Component {
                        value={this.state.text}
                        onKeyPress={this.onSubmit}/>
                     </span></span>
-                )}
-
-
-
+                }
             </div>
             <span ref={el => (this.bottomSpan = el)} />
 

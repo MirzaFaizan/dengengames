@@ -185,22 +185,17 @@ class ResponsiveDrawer extends React.Component {
                     tronWeb:
                     tronWebState
                 });
-
                 return resolve();
             }
-
             let tries = 0;
-
             const timer = setInterval(() => {
                 if(tries >= 10) {
                     const TRONGRID_API = 'https://api.trongrid.io';
-
                     window.tronWeb = new TronWeb(
                         TRONGRID_API,
                         TRONGRID_API,
                         TRONGRID_API
                     );
-
                     this.setState({
                         tronWeb: {
                             installed: false,
@@ -235,35 +230,26 @@ class ResponsiveDrawer extends React.Component {
             // Directly overwrites the address object as TronLink disabled the
             // function call
             localStorage.setItem('check_function', this.state.tronAdressBool);
-            localStorage.removeItem('check_function');
             console.log("not login")
             window.tronWeb.defaultAddress = {
                 hex: window.tronWeb.address.toHex(FOUNDATION_ADDRESS),
                 base58: FOUNDATION_ADDRESS
             };
             window.tronWeb.on('addressChanged', () => {
-
-
-
                 if(this.state.tronWeb.loggedIn)
                     return;
-
                 this.setState({
                     tronWeb: {
                         installed: true,
                         loggedIn: true
                     }
                 });
-
                 console.log("login");
                 this.setState({
                     LOGIN: false,
                     tronAdressBool:true
                 });
                 localStorage.setItem('check_function', this.state.tronAdressBool);
-                localStorage.removeItem('check_function');
-
-
             });
         }
         console.log("name" );
@@ -272,15 +258,11 @@ class ResponsiveDrawer extends React.Component {
             this.setState({
                 tronAdress:res.address
             })
-
         });
         await Utils.setTronWeb(window.tronWeb);
-
         this.startEventListener();
         this.fetchMessages();
     }
-
-
     handleChange = (event) => {
     this.setState({ value:event });
   }
@@ -296,10 +278,8 @@ class ResponsiveDrawer extends React.Component {
           {/*<div className={classes.toolbar}><img src={LOGO} alt="logo" style={{height:'66px'}}/> </div>*/}
         <Divider />
         <DrawerTabs/>
-
       </div>
     );
-
     return (
             <div  className={classes.root} >
                 <CssBaseline />
@@ -316,8 +296,6 @@ class ResponsiveDrawer extends React.Component {
                     <Typography variant="h6" color="inherit" noWrap>
                     <Hidden xsDown implementation="css"> 
                       <img src={LOGO} alt="logo" style={{height:'64px'}}/>
-                        {/*<span style={{fontSize:'24px'}}>*/}
-                            {/*<span style={{color:'#1dc914',fontSize:'30px'}}>D</span>en<span style={{color:'#1dc914',fontSize:'24px'}}>g</span>en Games</span>*/}
                       </Hidden>
                     </Typography>
                          <div style={style}>
@@ -325,20 +303,12 @@ class ResponsiveDrawer extends React.Component {
                                <img src={IMG1} alt="img1"/>
                             </span>
                              <span className="spann" style={{paddingRight:'15px',fontSize:'16px',color:'#bbb'}}>
-
-
-
                                 { this.state.LOGIN && (
                                  <span onClick={this.handleClickOpen}>Login</span>
                                 )}
-
                                 { this.state.tronAdressBool && (
                                      <span><span>{this.state.tronAdress}</span></span>
                                 )}
-
-
-
-
                             </span>
                             <span className="spann" style={{paddingRight:'10px'}}>
                                 <img src={TRONLINK} style={{height:'40px'}} alt="tron"/>
@@ -356,7 +326,6 @@ class ResponsiveDrawer extends React.Component {
                           </div>
                   </Toolbar>
                 </AppBar>
-                {/*alert*/}
                 <Dialog
                     open={this.state.open}
                     TransitionComponent={Transition}
@@ -365,8 +334,6 @@ class ResponsiveDrawer extends React.Component {
                     aria-labelledby="alert-dialog-slide-title"
                     aria-describedby="alert-dialog-slide-description"
                 >
-                    {/*<DialogTitle id="alert-dialog-slide-title">*/}
-                        {/*{"Use Google's location service?"}*/}
                     {/*</DialogTitle>*/}
                     <DialogContent>
                         <DialogContentText id="alert-dialog-slide-description">

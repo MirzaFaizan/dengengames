@@ -21,6 +21,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
 import LOGO from "../../images/logoo.png";
+import Arrow from '../../images/arrow-down.png';
 import Hidden from "@material-ui/core/Hidden/Hidden";
 //   import Grid from '@material-ui/core/Grid';
 
@@ -74,16 +75,15 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
           <div>
                 <Navbar dark expand="md" style={{backgroundColor:'black'}}>
                 <NavbarBrand href="/">
-                    <img src={LOGO} alt="logo" style={{height:'16vh'}}/>
+                    <img src={LOGO} alt="logo" style={{height:'14vh'}}/>
                 </NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="container" navbar >
-
-                        <NavItem style={{marginRight:'1%',marginLeft:'1%',paddingTop:'1%'}}>
+                        <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                             <NavLink to="/degenplatform" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Degen Platform</h5></NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight:'3%',marginLeft:'1%',paddingTop:'1%'}}>
+                        <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                             <NavLink to="/ante" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>ANTE</h5></NavLink>
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
@@ -92,22 +92,19 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                              <NavLink to="/roadmap" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Road Map</h5></NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight:'3%',paddingTop:'1%'}}>
+                        <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                              <NavLink to="/partners" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Partners</h5></NavLink>
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                             <NavLink to="/playnow" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Play Now</h5></NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight:'1%',marginLeft:'1%',paddingTop:'1%'}}>
+                        <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                             <NavLink to="/white_paper" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Whitepaper</h5></NavLink>
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                             <NavLink to="/community_first" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Community First</h5></NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
-
-
-
+                        <NavItem style={{marginRight:'2%'}}>
 
                             <Button
                                 aria-owns={open ? 'fade-menu' : undefined}
@@ -115,7 +112,7 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
                                 onClick={this.handleClickk}
                                 style={{color:'white'}}
                             >
-                                EDGE Token
+                                <span><img src={Arrow} alt="arrow" style={{height:'15px'}}/> EDGE Token</span>
                             </Button>
                             <Menu
                                 id="fade-menu"
@@ -127,25 +124,18 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
                                 <Link to="/edge"> <MenuItem onClick={this.handleClose}>EDGE Token</MenuItem></Link>
                                 <Link to="/dividends"><MenuItem onClick={this.handleClose}>Dividends</MenuItem></Link>
                             </Menu>
-
-
-
-
-
                         </NavItem>
                         <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
                             <NavLink to="/hash" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Hash Ruffle</h5></NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight:'2%',paddingTop:'1%'}}>
-
-
+                        <NavItem style={{marginRight:'2%'}}>
                             <Button
                                 aria-owns={open ? 'fade-menu' : undefined}
                                 aria-haspopup="true"
                                 onClick={this.handleClick}
                                 style={{color:'white'}}
                             >
-                                MOre Games OTW
+                                <span><img src={Arrow} alt="arrow" style={{height:'15px'}}/>MOre Games OTW</span>
                             </Button>
                             <Menu
                                 id="fade-menu"
@@ -161,10 +151,7 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
                                 <Link to="/roshambo"><MenuItem onClick={this.handleClose}>Roshambo</MenuItem></Link>
                                 <Link to="/nft"><MenuItem onClick={this.handleClose}>NFT</MenuItem></Link>
                             </Menu>
-
                         </NavItem>
-
-
                     </Nav>
                 </Collapse>
                 </Navbar>

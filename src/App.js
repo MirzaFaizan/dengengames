@@ -29,8 +29,7 @@ import maverick from "./views/StaticViews/maverick";
 import pitchBlack from "./views/StaticViews/pitchBlack";
 import roshambo from "./views/StaticViews/roshambo";
 import nft from "./views/StaticViews/nft";
-
-
+import landingPage from './views/LandingPage/landingPage';
 
 class App extends Component {
   render() {
@@ -59,6 +58,7 @@ class App extends Component {
                 <Route path="/pitch" component={pitchBlack}/>
                 <Route path="/roshambo" component={roshambo}/>
                 <Route path="/nft" component={nft}/>
+                <Route path="/landing" component={landingPage}/>
 
             </div>
         </HashRouter>
