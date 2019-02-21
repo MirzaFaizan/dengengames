@@ -58,7 +58,7 @@ class App extends Component {
                 <Route path="/pitch" component={pitchBlack}/>
                 <Route path="/roshambo" component={roshambo}/>
                 <Route path="/nft" component={nft}/>
-                <Route path="/landing" component={landingPage}/>
+                <Route path="/index" component={landingPage}/>
 
             </div>
         </HashRouter>

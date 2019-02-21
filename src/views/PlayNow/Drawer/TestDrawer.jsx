@@ -25,10 +25,7 @@ import { withStyles } from '@material-ui/core/styles';
 import './drawer.css';
 import DrawerTabs from './DrawerTabs/DrawerTabs.jsx';
 import Button from '@material-ui/core/Button';
-
 import Grid from '@material-ui/core/Grid';
-
-
 import { Slider } from 'material-ui-slider';
 import Table from './Table/Table.jsx';
 import Tab from '@material-ui/core/Tab'
@@ -41,7 +38,6 @@ import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
 import IMG1 from "../../../images/img1.png";
 import TRONLINK from "../../../images/tronLink.png";
 import Background from "../../../images/bg.jpg"
-
 import './drawer.css';
 
 function Transition(props) {
@@ -218,12 +214,9 @@ class ResponsiveDrawer extends React.Component {
                 this.setState({
                     tronWeb: tronWebState
                 });
-
-
                 resolve();
             }, 100);
         });
-
         if(!this.state.tronWeb.loggedIn)
         {
             // Set default address (foundation address) used for contract calls
