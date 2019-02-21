@@ -105,7 +105,6 @@ import Hidden from "@material-ui/core/Hidden/Hidden";
                             <NavLink to="/community_first" style={{color:'white'}}><h5 style={{fontSize:'14px'}}>Community First</h5></NavLink>
                         </NavItem>
                         <NavItem style={{marginRight:'2%'}}>
-
                             <Button
                                 aria-owns={open ? 'fade-menu' : undefined}
                                 aria-haspopup="true"
