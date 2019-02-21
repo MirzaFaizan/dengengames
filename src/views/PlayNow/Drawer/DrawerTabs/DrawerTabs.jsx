@@ -74,6 +74,14 @@ class FullWidthTabs extends React.Component {
 
         }
     }
+
+    handleClickOpen = () => {
+        this.setState({ open: true });
+    };
+
+    handleClose = () => {
+        this.setState({ open: false });
+    };
     // componentWillMount()
     // {
     //     // localStorage.removeItem('check_function')
@@ -81,6 +89,8 @@ class FullWidthTabs extends React.Component {
     //         dynamic:localStorage.getItem('check_function')
     //     })
     // }
+
+
     componentDidMount() {
         var config = {
             apiKey: "AIzaSyCQYIfV90PdMdLD8cagUzXBs0vjNckb0hE",
@@ -191,7 +201,7 @@ class FullWidthTabs extends React.Component {
       </div>
             <div className={classes.toolbar} style={{padding:'10px'}}>
                 { !localStorage.getItem('check_function') &&
-                    <span onClick={this.handleClickOpen}>message here</span>
+                    <span onClick={this.handleClickOpen} style={{fontSize:'16px'}}>message here</span>
                 }
 
                 { localStorage.getItem('check_function') &&
@@ -205,6 +215,26 @@ class FullWidthTabs extends React.Component {
                 }
             </div>
             <span ref={el => (this.bottomSpan = el)} />
+            <Dialog
+                // fullScreen={fullScreen}
+                open={this.state.open}
+                onClose={this.handleClose}
+                aria-labelledby="responsive-dialog-title"
+            >
+                <DialogContent>
+                    <DialogContentText>
+                        Please login to your TRONLink wallet. If you do not have TRONLink wallet installed please visit
+                        http://u6.gg/gmc5D and download the chrome extension. (TRONbet is only availble using
+                        Chrome browser for the time being)
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions>
+
+                    <Button onClick={this.handleClose} color="primary" autoFocus>
+                        ok
+                    </Button>
+                </DialogActions>
+            </Dialog>
 
         </div>
     );

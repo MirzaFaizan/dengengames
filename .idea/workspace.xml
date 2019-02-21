@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b817346-e1ef-4f3b-80c3-a08abd74fad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/views/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,14 +49,14 @@
           <entry key="css" value="156" />
           <entry key="html" value="18" />
           <entry key="js" value="882" />
-          <entry key="jsx" value="9178" />
+          <entry key="jsx" value="9216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="156" />
           <entry key="HTML" value="18" />
-          <entry key="JSX Harmony" value="9178" />
+          <entry key="JSX Harmony" value="9216" />
           <entry key="JavaScript" value="882" />
         </counts>
       </usages-collector>
@@ -70,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="192" column="19" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
+            <state relative-caret-position="34">
+              <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -82,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="396">
               <caret line="1090" column="94" selection-start-line="1090" selection-start-column="94" selection-end-line="1090" selection-end-column="94" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -175,6 +174,7 @@
       <find>tronAdressBoo</find>
       <find>loggedIn</find>
       <find>tabl</find>
+      <find>full</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,11 +212,11 @@
         <option value="$PROJECT_DIR$/src/views/StaticViews/whitepaper.css" />
         <option value="$PROJECT_DIR$/src/views/StaticViews/whitePaper.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/drawer.css" />
-        <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/views/Main/Main.jsx" />
         <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx" />
+        <option value="$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx" />
       </list>
     </option>
   </component>
@@ -323,12 +323,12 @@
       <updated>1549877957319</updated>
       <workItem from="1549877963553" duration="39417000" />
       <workItem from="1550132591974" duration="42053000" />
-      <workItem from="1550739517239" duration="7232000" />
+      <workItem from="1550739517239" duration="8263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123396000" />
+    <option name="totallyTimeSpent" value="124427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -338,7 +338,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.17336309" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.17184943" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.17184943" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -602,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="192" column="19" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/LandingPage/landingPage.jsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -659,7 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/TestDrawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="396">
           <caret line="1090" column="94" selection-start-line="1090" selection-start-column="94" selection-end-line="1090" selection-end-column="94" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -678,6 +668,16 @@
             <element signature="e#14066#16221#0" />
             <element signature="e#15960#21859#0" />
             <element signature="e#29998#36684#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/PlayNow/Drawer/DrawerTabs/DrawerTabs.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
