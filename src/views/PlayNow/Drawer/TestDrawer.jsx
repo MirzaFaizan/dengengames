@@ -39,6 +39,9 @@ import IMG1 from "../../../images/img1.png";
 import TRONLINK from "../../../images/tronLink.png";
 import Background from "../../../images/bg.jpg"
 import './drawer.css';
+import {
+    NavLink, Link
+} from "react-router-dom";
 
 function Transition(props) {
     return <Slide direction="up" {...props} />;
@@ -223,6 +226,7 @@ class ResponsiveDrawer extends React.Component {
             // Directly overwrites the address object as TronLink disabled the
             // function call
             localStorage.setItem('check_function', this.state.tronAdressBool);
+
             console.log("not login")
             window.tronWeb.defaultAddress = {
                 hex: window.tronWeb.address.toHex(FOUNDATION_ADDRESS),
@@ -293,8 +297,13 @@ class ResponsiveDrawer extends React.Component {
                     </Typography>
                          <div style={style}>
                             <span className="spann" style={{paddingRight:'15px'}}>
+                                <Link to="/index2"><span style={{color:'#bbb',fontSize:'16px'}}>Game 2</span></Link>
+                            </span>
+
+                             <span className="spann" style={{paddingRight:'15px'}}>
                                <img src={IMG1} alt="img1"/>
                             </span>
+
                              <span className="spann" style={{paddingRight:'15px',fontSize:'16px',color:'#bbb'}}>
                                    <Hidden smDown>
                                         { this.state.LOGIN && (

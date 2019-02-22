@@ -27,6 +27,10 @@ import HOME from "../../images/landingImages/home.png";
 import ANN from "../../images/landingImages/ann.png";
 import GAMES from "../../images/landingImages/games.png";
 import "./landingPage.css";
+import Hash from "../../images/landingImages/Hash11.png"
+import one1 from "../../images/landingImages/11.png"
+import onek from "../../images/landingImages/1k1.png"
+import oneO1 from "../../images/landingImages/101.png"
 
 function Transition(props) {
     return <Slide direction="up" {...props} />;
@@ -60,7 +64,6 @@ const styles = theme => ({
         backgroundColor:'black'
     },
     menuButton: {
-        marginRight: 20,
         [theme.breakpoints.up('sm')]: {
             display: 'none',
         },
@@ -101,7 +104,7 @@ class ResponsiveDrawer extends React.Component {
         const { classes, theme } = this.props;
 
         return (
-            <div  className={classes.root} >
+            <div  style={{height:'80%',width:'100%',margin:'0',backgroundColor:'black'}} className="bacG" >
                 <CssBaseline />
                 {/*nav bar*/}
                 <AppBar position="fixed" className={classes.appBar}>
@@ -116,54 +119,95 @@ class ResponsiveDrawer extends React.Component {
                         </IconButton>
                         <Typography variant="h6" color="inherit" noWrap>
                             <Hidden xsDown>
-                                <img src={LOGO} alt="logo" style={{height:'20vh'}}/>
+                                <img src={LOGO} alt="logo" style={{width:'150px'}}/>
                             </Hidden>
                         </Typography>
                             <span className="spann">
-                               <img src={HOME} alt="img1" style={{height:'10vh'}}/>
+                               <img src={HOME} alt="img1" style={{width:'40px'}}/>
                             </span>
                             <span className="spann" style={{paddingRight:'5px'}}>
-                               <img src={GAMES} alt="img1" style={{height:'10vh'}}/>
+                               <img src={GAMES} alt="img1" style={{width:'40px'}}/>
                             </span>
                             <span  style={{paddingRight:'10px'}}>
-                                <img src={MENU} style={{height:'10vh',marginRight:'5px'}} alt="tron"/>
+                                <img src={MENU} style={{width:'40px',marginRight:'5px'}} alt="tron"/>
                             </span>
                             <span  style={{paddingRight:'5px'}}>
-                                <img src={ANN} style={{height:'10vh'}} alt="tron"/>
+                                <img src={ANN} style={{width:'40px'}} alt="tron"/>
                             </span>
                         <div style={style}>
                             <span className="spann">
-                               <img src={TWITTER} alt="img1" style={{height:'8vh'}}/>
+                               <img src={TWITTER} alt="img1" style={{width:'30px'}}/>
                             </span>
                             <span className="spann" style={{paddingRight:'5px'}}>
-                               <img src={TELEGRAM} alt="img1" style={{height:'8vh'}}/>
+                               <img src={TELEGRAM} alt="img1" style={{width:'30px'}}/>
                             </span>
                             <span  style={{paddingRight:'10px'}}>
-                                <img src={TRONBLUE} style={{height:'8vh',marginRight:'5px'}} alt="tron"/>
+                                <img src={TRONBLUE} style={{width:'30px',marginRight:'5px'}} alt="tron"/>
                                 <span>Wallet Name</span>
                             </span>
                             <span  style={{paddingRight:'5px'}}>
-                                <img src={TRANSLATE} style={{height:'8vh'}} alt="tron"/>
+                                <img src={TRANSLATE} style={{width:'40px'}} alt="tron"/>
                             </span>
                         </div>
                     </Toolbar>
                 </AppBar>
-                {/*nav bar end*/}
-                <Grid style={{backgroundColor:'black',height:'100%',color:'white',paddingTop:'100px'}} container spacing={0}>
 
-                    <Grid item xs={3} style={{paddingRight:'5px',height:'80vh'}}>
+                {/*nav bar end*/}
+                <Grid style={{backgroundColor:'black',color:'white',paddingTop:'90px'}} container spacing={0}>
+
+                    <Grid item xs={3} style={{paddingRight:'5px',color:'gray'}}>
                         <Grid container spacing={0} item xs={12} className="rcorners2">
-                            hello
+
                         </Grid>
                     </Grid>
-                    <Grid item xs={6} style={{paddingRight:'5px'}}>
-                        <Grid container spacing={0} item xs={12} className="rcorners2">
-                            hello
-                        </Grid>
-                    </Grid>
-                    <Grid item xs={3} style={{paddingRight:'5px'}}>
-                        <Grid container spacing={0} item xs={12} className="rcorners2">
-                            hello
+                    <Grid item xs={9} style={{paddingRight:'5px'}}>
+                        <Grid container spacing={0} >
+                            <Grid item xs={8} style={{paddingRight:'5px'}}>
+                                <Grid container spacing={0} item xs={12} className="rcorners3" >
+                                    <Grid container spacing={0} >
+                                        <Grid item xs={12} justify="center">
+                                            <img src={Hash} style={{height:'50vh'}} alt="hash raffle"/>
+                                        </Grid>
+                                        <Grid container spacing={0} style={{padding:'5px'}}>
+                                            <Grid item xs={4} >
+                                                <span><img src={one1} alt="11" style={{align:'center',height:'27vh'}}/></span>
+                                            </Grid>
+                                            <Grid item xs={4}>
+                                                <span><img src={oneO1} alt="11" style={{height:'27vh'}}/></span>
+                                            </Grid>
+                                            <Grid item xs={4}>
+                                                <span><img src={onek} alt="11" style={{height:'27vh'}}/></span>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+
+                                </Grid>
+                                <Grid container spacing={0} style={{paddingTop:'2px'}}>
+                                    <Grid item xs={12} style={{borderRadius:'15px',border: '1.5px solid gray', color:'gray'}}>
+
+                                        <div>
+                                            <span>Edge 12345</span><br/>
+                                            <span>TRX 12345</span>
+                                        </div>
+                                        <div style={{flex:'right', color:'gray'}}>
+                                            hello
+
+                                        </div>
+                                    </Grid>
+
+                                </Grid>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Grid container spacing={0} item xs={12} className="rcorners2">
+                                    <ul style={{listStyleType:'none',color:'gray'}}>
+                                        <li>Game:</li>
+                                        <li>Winner:</li>
+                                        <li>Hash:</li>
+                                        <li>Result:</li>
+                                        <li>Payout:</li>
+                                    </ul>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

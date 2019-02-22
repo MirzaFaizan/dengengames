@@ -24,7 +24,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Paper from '@material-ui/core/Paper';
-
+import '../landingPage.css';
 
 
 
@@ -43,19 +43,19 @@ TabContainer.propTypes = {
 
 const styles = theme => ({
   root: {
-    backgroundColor: '#181818',
+    backgroundColor: 'black',
       // marginTop:'18.25%'
    
   },
   appbarRoot: {
-    backgroundColor: '#181818',
+    backgroundColor: 'black',
      
   },
   tabsRoot:{
       color:'white',
   },
     textColor:{
-      color:'white'
+      color:'gray'
     }
 });
 var check = localStorage.getItem('check_function');
@@ -171,17 +171,7 @@ class FullWidthTabs extends React.Component {
     return (
         <div>
       <div className={classes.root}>
-          <Tabs
-            value={this.state.value}
-            onChange={this.handleChange}
-            // indicatorColor="inherit"
-            variant="fullWidth"
-            className={classes.tabsRoot}
-          >
-            <Tab label="Messages" className={classes.tabsRoot} icon={<MailIcon/>}/>
-            <Tab label="Rankings" icon={<Sort/>}/>
 
-          </Tabs>
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={this.state.value}
@@ -190,9 +180,11 @@ class FullWidthTabs extends React.Component {
           <TabContainer dir={theme.direction}>
             {/*<Messages/>*/}
               <div>
-                  <List style={{width:'100%',backgroundColor: '#181818',color:'white',maxHeight: '400px'}}>
+                  <List style={{width:'100%',backgroundColor: 'black',color:'gray',maxHeight: '70vh'}}>
                       {this.renderMessages()}
                   </List>
+                  <span ref={el => (this.bottomSpan = el)} />
+
               </div>
           </TabContainer>
           <TabContainer dir={theme.direction}>
@@ -200,9 +192,9 @@ class FullWidthTabs extends React.Component {
           </TabContainer>
         </SwipeableViews>
       </div>
-            <div className={classes.toolbar} style={{padding:'10px'}}>
+            <div className={classes.toolbar}>
                 { !localStorage.getItem('check_function') &&
-                    <span onClick={this.handleClickOpen} style={{fontSize:'16px'}}>message here</span>
+                    <span onClick={this.handleClickOpen} style={{fontSize:'16px',padding:'10px'}}>message here</span>
                 }
 
                 { localStorage.getItem('check_function') &&
@@ -211,11 +203,13 @@ class FullWidthTabs extends React.Component {
                        style={{fontSize:'14px',color:'white',backgroundColor:'#282c34',border:'none'}}
                        onChange={event => this.setState({ text: event.target.value })}
                        value={this.state.text}
-                       onKeyPress={this.onSubmit}/>
-                    </span></span>
+                       onKeyPress={this.onSubmit}/><span style={{flex:'right'}}><button style={{background:'none',border:'none',color:'gray'}}>→</button></span>
+                    </span>
+                                <span ref={el => (this.bottomSpan = el)} />
+
+                    </span>
                 }
             </div>
-            <span ref={el => (this.bottomSpan = el)} />
             <Dialog
                 // fullScreen={fullScreen}
                 open={this.state.open}
