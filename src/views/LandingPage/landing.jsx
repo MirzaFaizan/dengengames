@@ -15,7 +15,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-
+import { Link } from 'react-router-dom';
 
 // import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -296,7 +296,7 @@ class ResponsiveDrawer extends React.Component {
                         </IconButton>
                         <Typography variant="h6" color="inherit" noWrap>
                             <Hidden xsDown>
-                                <img src={LOGO} alt="logo" style={{width:'150px'}}/>
+                                <Link to="playnow">  <img src={LOGO} alt="logo" style={{width:'150px'}}/></Link>
                             </Hidden>
                         </Typography>
                         <span className="spann">

@@ -101,7 +101,10 @@ class FullWidthTabs extends React.Component {
             storageBucket: "dengen-games-chat.appspot.com",
             messagingSenderId: "144346267436"
         };
-        firebase.initializeApp(config);
+        if (!firebase.apps.length) {
+            firebase.initializeApp(config);
+        }
+        // firebase.initializeApp(config);
         this.getMessages()
         console.log("BOOOOOOOL"+this.props.LOGIN);
         this.setState({
